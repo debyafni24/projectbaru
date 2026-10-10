@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ucapan Ulang Tahun Bu Rini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/bolu.webp">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lora:ital@0;1&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader" class="stage">
+  <svg class="bloom" viewBox="0 0 40 40" aria-hidden="true"><g fill="#f2799c"><circle cx="20" cy="9" r="7"/><circle cx="31" cy="17" r="7"/><circle cx="27" cy="30" r="7"/><circle cx="13" cy="30" r="7"/><circle cx="9" cy="17" r="7"/></g><circle cx="20" cy="20" r="5" fill="#f5c26b"/></svg>
+  <p class="hint">Menyiapkan sesuatu yang spesial untukmu...</p>
+</div>
+
+<div id="gift" class="stage" hidden>
+  <p class="hint">Ketuk kotak hadiah untuk membukanya</p>
+  <button class="giftbtn" id="giftBtn" aria-label="Buka kotak hadiah">
+    <svg viewBox="0 0 110 110" aria-hidden="true">
+      <rect x="18" y="48" width="74" height="52" rx="5" fill="#f2799c"/>
+      <rect x="12" y="34" width="86" height="20" rx="5" fill="#ff9bb8"/>
+      <rect x="50" y="34" width="10" height="66" fill="#f5c26b"/>
+      <path d="M55 34C40 10 22 22 36 32ZM55 34C70 10 88 22 74 32Z" fill="none" stroke="#f5c26b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</div>
+
+<div id="bg" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><b class="b1"></b><b class="b2"></b></div>
+<canvas id="petals"></canvas>
+<canvas id="fx"></canvas>
+
+<main id="main" hidden>
+  <section class="page hero">
+    <p class="eyebrow" id="eyDate">Hari istimewa guruku</p>
+    <h1>Barakallah fii umrik<em id="nm"></em></h1>
+    <svg class="cake" id="cake" viewBox="0 -170 1006 1091" role="img" aria-label="Kue ulang tahun dua tingkat dengan tiga lilin">
+      <defs><pattern id="cstripe" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><rect width="28" height="28" fill="#fff6f8"/><rect width="14" height="28" fill="#ffc2d4"/></pattern></defs>
+      <image href="assets/bolu.webp" x="0" y="0" width="1006" height="921"/>
+      <g>
+        <rect x="339" y="-36" width="28" height="112" rx="7" fill="url(#cstripe)"/>
+        <rect x="339" y="-36" width="28" height="112" rx="7" fill="none" stroke="#e7a4b8" stroke-width="2"/>
+        <line x1="353" y1="-36" x2="353" y2="-45" stroke="#5b3a3a" stroke-width="3" stroke-linecap="round"/>
+        <g class="flame"><circle cx="353" cy="-70" r="42" fill="#ffd27a" opacity=".14"/>
+          <path d="M353 -44c-17-9-20-27-6-44 4 8 8 11 11 8 8 8 12 25-5 36z" fill="#ffb347"/>
+          <path d="M353 -46c-8-5-9-14-2-23 2 4 4 6 6 4 4 5 5 13-4 19z" fill="#fff0b3"/></g>
+        <g class="smoke" stroke="#ffd3e0" stroke-width="3" fill="none" stroke-linecap="round"><path d="M353 -48q-9-16 0-30"/></g>
+      </g><g>
+        <rect x="482" y="-92" width="28" height="112" rx="7" fill="url(#cstripe)"/>
+        <rect x="482" y="-92" width="28" height="112" rx="7" fill="none" stroke="#e7a4b8" stroke-width="2"/>
+        <line x1="496" y1="-92" x2="496" y2="-101" stroke="#5b3a3a" stroke-width="3" stroke-linecap="round"/>
+        <g class="flame"><circle cx="496" cy="-126" r="42" fill="#ffd27a" opacity=".14"/>
+          <path d="M496 -100c-17-9-20-27-6-44 4 8 8 11 11 8 8 8 12 25-5 36z" fill="#ffb347"/>
+          <path d="M496 -102c-8-5-9-14-2-23 2 4 4 6 6 4 4 5 5 13-4 19z" fill="#fff0b3"/></g>
+        <g class="smoke" stroke="#ffd3e0" stroke-width="3" fill="none" stroke-linecap="round"><path d="M496 -104q-9-16 0-30"/></g>
+      </g><g>
+        <rect x="642" y="-32" width="28" height="112" rx="7" fill="url(#cstripe)"/>
+        <rect x="642" y="-32" width="28" height="112" rx="7" fill="none" stroke="#e7a4b8" stroke-width="2"/>
+        <line x1="656" y1="-32" x2="656" y2="-41" stroke="#5b3a3a" stroke-width="3" stroke-linecap="round"/>
+        <g class="flame"><circle cx="656" cy="-66" r="42" fill="#ffd27a" opacity=".14"/>
+          <path d="M656 -40c-17-9-20-27-6-44 4 8 8 11 11 8 8 8 12 25-5 36z" fill="#ffb347"/>
+          <path d="M656 -42c-8-5-9-14-2-23 2 4 4 6 6 4 4 5 5 13-4 19z" fill="#fff0b3"/></g>
+        <g class="smoke" stroke="#ffd3e0" stroke-width="3" fill="none" stroke-linecap="round"><path d="M656 -44q-9-16 0-30"/></g>
+      </g>
+    </svg>
+    <button class="pill" id="blow">Tiup lilinnya</button>
+    <p class="sub" id="blowMsg">Ketuk tombol, lalu ucapkan satu harapan dalam hati.</p>
+  </section>
+
+  <section class="page photo">
+    <p class="eyebrow">Untuk guru tercinta</p>
+    <h2>Terima kasih untuk semua ilmunya, Bu</h2>
+    <p class="sub">Aku pajang foto Ibu di sini supaya Ibu tahu, ilmu dan kebaikan Ibu selalu kuingat.</p>
+    <figure class="frame">
+      <img src="assets/foto-bu-rini.jpg" alt="Foto Rini Melati dengan hijab merah muda dan bros perak">
+      <figcaption><small>Guruku</small><span id="nm2"></span></figcaption>
+    </figure>
+  </section>
+
+  <section class="page vid">
+    <p class="eyebrow">Pesan khusus</p>
+    <h2>Ada salam untuk Ibu</h2>
+    <div class="vframe">
+      <video id="vid" src="assets/video-ucapan.mp4" poster="assets/video-poster.jpg" controls playsinline preload="metadata" aria-label="Video ucapan ulang tahun untuk Bu Rini"></video>
+    </div>
+    <p class="sub">Ketuk tombol putar untuk mendengar ucapannya.</p>
+  </section>
+
+  <section class="page">
+    <p class="eyebrow">Sepucuk surat</p>
+    <article class="letter">
+      <p class="date" id="ltDate">Untuk hari bahagiamu</p>
+      <h3 id="ltHead"></h3>
+      <p>Hari ini aku ingin berhenti sejenak dan mengucapkan terima kasih. Ibu tidak hanya mengajarkan pelajaran, tetapi juga cara bersabar, cara bertanya, dan cara tidak menyerah.</p>
+      <p>Setiap penjelasan yang Ibu ulang tanpa lelah dan setiap nasihat yang kadang baru kumengerti belakangan, semuanya kusimpan dengan baik.</p>
+      <p>Barakallah fii umrik, Bu. Semoga Allah memberi Ibu kesehatan, rezeki yang lapang, dan hati yang tenang. Semoga kebaikan yang Ibu tanam kembali berlipat kepada Ibu. Aamiin.</p>
+      <p class="sign" id="from"></p>
+    </article>
+  </section>
+
+  <section class="page">
+    <p class="eyebrow">Hadiah kecil dariku</p>
+    <h2>Buket Bunga Digital</h2>
+    <p class="sub">Ketuk salah satu bunga untuk membaca doaku untuk Ibu.</p>
+    <div class="bq" id="bq" role="group" aria-label="Buket sepuluh bunga"></div>
+    <p class="wish" id="wish" aria-live="polite">Ketuk salah satu bunga.</p>
+  </section>
+
+  <section class="page">
+    <p class="eyebrow">Dari hatiku</p>
+    <h2>Alasanku Berterima Kasih</h2>
+    <svg class="jar" viewBox="0 0 130 160" aria-hidden="true">
+      <rect x="28" y="6" width="74" height="18" rx="6" fill="#f2799c"/>
+      <path d="M34 24h62v14q18 6 18 26v70a14 14 0 0 1-14 14H30a14 14 0 0 1-14-14V64q0-20 18-26z" fill="rgba(255,255,255,.12)" stroke="#ffd3e0" stroke-width="2"/>
+      <g><rect x="34" y="112" width="26" height="14" rx="2" fill="#ffd3e0" transform="rotate(-12 47 119)"/><rect x="60" y="120" width="28" height="14" rx="2" fill="#f5c26b" transform="rotate(8 74 127)"/><rect x="42" y="132" width="24" height="12" rx="2" fill="#f2799c" transform="rotate(14 54 138)"/><rect x="72" y="104" width="22" height="12" rx="2" fill="#fbf3ea" transform="rotate(-6 83 110)"/></g>
+    </svg>
+    <button class="pill" id="jarBtn">Ambil satu catatan</button>
+    <div class="note" id="note" hidden></div>
+  </section>
+
+  <section class="page end">
+    <p id="endMsg"></p>
+    <button class="pill" id="again">Kembali ke halaman awal</button>
+  </section>
+  <nav class="pager" id="pager" aria-label="Navigasi halaman">
+    <button id="prev" aria-label="Halaman sebelumnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="dots" id="dots"></div>
+    <button id="next" aria-label="Halaman berikutnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  </nav>
+</main>
+
+<button class="music" id="music" hidden aria-label="Nyalakan atau matikan musik">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 3v11.3A3.5 3.5 0 1 0 11 17.5V8h6V3z"/></svg>
+</button>
+<script src="script.js"></script>
+</body>
+</html>
